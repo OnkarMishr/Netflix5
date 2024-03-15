@@ -10,7 +10,9 @@ pipeline {
             }
         }
         stage('Build'){
-            sh '/home/onkar/Documents/Devops_Softawre/apache-maven-3.9.6/bin install' 
+            steps{
+                sh '/home/onkar/Documents/Devops_Softawre/apache-maven-3.9.6/bin install' 
+            }
         }
         stage('Deployement') {
             steps {
