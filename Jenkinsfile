@@ -1,5 +1,5 @@
 pipeline {
-    aagent{
+    agent{
 	label 'mens-slave'
 	}
     parameters {
