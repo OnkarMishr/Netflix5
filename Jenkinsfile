@@ -9,7 +9,10 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Build') {
+        stage('Build'){
+            sh '/home/onkar/Documents/Devops_Softawre/apache-maven-3.9.6/bin install' 
+        }
+        stage('Deployement') {
             steps {
                 script {
                     if (params.ENVIRONMENT == 'QA') {
