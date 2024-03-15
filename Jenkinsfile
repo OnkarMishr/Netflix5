@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    aagent{
+	label 'mens-slave'
+	}
     parameters {
         choice(name: 'ENVIRONMENT', choices: ['QA', 'UAT'], description: 'Select environment')
     }
